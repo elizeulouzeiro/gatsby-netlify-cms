@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Netlify CSM with Gatsby`,
@@ -15,5 +17,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        src: path.join(__dirname, "src"),
+      },
+    },
   ],
 }
