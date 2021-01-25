@@ -1,7 +1,7 @@
 ---
 title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 image: /static/images/uploads/image01.jpg
-read_time: "5"
+read_time: "2"
 resume: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend
   pharetra magna, id semper est molestie ut. Ut vestibulum ante quis lectus
   maximus vulputate.

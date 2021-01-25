@@ -3,6 +3,7 @@ export type NewsListType = {
   image: string;
   resume: string;
   title: string;
+  readTime: string;
 };
 
 export interface NewListProps {
@@ -19,6 +20,7 @@ export interface NewsListQuery {
             image: string;
             resume: string;
             title: string;
+            read_time: string;
           };
         };
       }

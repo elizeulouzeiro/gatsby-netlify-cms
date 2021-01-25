@@ -10,9 +10,10 @@ export default () => (
       {(news) =>
         news?.map((item) => (
           <NewsCard
-            key={item.id}
             description={item.resume}
             image={{ alt: item.title, source: item.image }}
+            key={item.id}
+            readTime={item.readTime}
             title={item.title}
           />
         ))

@@ -17,6 +17,7 @@ const NewsList = ({ children }: NewListProps) => {
               title
               image
               resume
+              read_time
             }
           }
         }
@@ -30,6 +31,7 @@ const NewsList = ({ children }: NewListProps) => {
         ...node.frontmatter,
         id: node.id,
         image: path.basename(path.join(__dirname, node.frontmatter.image)),
+        readTime: node.frontmatter.read_time,
       })),
     [data]
   );
