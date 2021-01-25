@@ -17,7 +17,6 @@ export const Title = styled.h1`
   font-weight: 500;
 
   a {
-    color: #4a4a4a;
     text-decoration: none;
   }
 `
