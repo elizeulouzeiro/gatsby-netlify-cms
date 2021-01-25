@@ -15,6 +15,20 @@ module.exports = {
         path: path.join(__dirname, "src", "images"),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: path.join(__dirname, "images", "uploads"),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `news`,
+        path: path.join(__dirname, "content", "news"),
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
@@ -24,6 +38,7 @@ module.exports = {
         src: path.join(__dirname, "src"),
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
   ],
 };
