@@ -1,21 +1,40 @@
-import styled from "styled-components"
+import React, { useMemo } from "react";
 
-import styledMedia from "src/styles/styledMedia"
+import path from "path";
+import { graphql, useStaticQuery } from "gatsby";
 
-const NewsList = styled.section`
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
+import { NewListProps, NewsListQuery, NewsListType } from "./NewsList.types";
+import * as S from "./NewsList.styles";
 
-  ${styledMedia.greaterThan("tablet")`
-    gap: 1.25rem;
-    grid-template-columns: repeat(2, 1fr);
-  `}
+const NewsList = ({ children }: NewListProps) => {
+  const data: NewsListQuery = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              image
+              resume
+            }
+          }
+        }
+      }
+    }
+  `);
 
-  ${styledMedia.greaterThan("laptopL")`
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-  `}
-`
+  const news: NewsListType[] = useMemo(
+    () =>
+      data.allMarkdownRemark.edges.map(({ node }) => ({
+        ...node.frontmatter,
+        id: node.id,
+        image: path.basename(path.join(__dirname, node.frontmatter.image)),
+      })),
+    [data]
+  );
 
-export { NewsList }
+  return <S.Wrapper>{children(news)}</S.Wrapper>;
+};
+
+export { NewsList };
