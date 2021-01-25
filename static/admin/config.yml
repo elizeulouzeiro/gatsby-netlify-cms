@@ -2,17 +2,17 @@ backend:
   name: git-gateway
   branch: main
 local_backend: true
-media_folder: images/uploads
+media_folder: static/images/uploads
 publish_mode: editorial_workflow
 collections:
   - name: 'news'
     label: 'Notícias'
-    folder: content/news
+    folder: static/content/news
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields: 
       - { label: 'Título', name: 'title', widget: 'string' }
       - { label: 'Imagem', name: 'image', widget: 'image' }
-      - { label: 'Tempo de leitura', name: 'read_time', widget: 'string' }
+      - { label: 'Tempo de leitura (em minutos)', name: 'read_time', widget: 'string' }
       - { label: 'Resumo', name: 'resume', widget: 'string' }
       - { label: 'Conteúdo', name: 'content', widget: 'markdown' }

@@ -10,7 +10,7 @@ const Image: React.FunctionComponent<ImageProps> = ({ src, alt, ...props }) => {
       images: allFile(
         filter: {
           internal: { mediaType: { regex: "/image/" } }
-          dir: { regex: "/images/uploads/" }
+          dir: { regex: "/static/images/uploads/" }
         }
       ) {
         edges {
