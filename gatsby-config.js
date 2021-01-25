@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -24,5 +24,6 @@ module.exports = {
         src: path.join(__dirname, "src"),
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
-}
+};
