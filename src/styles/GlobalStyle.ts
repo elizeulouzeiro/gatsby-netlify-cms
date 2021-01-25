@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
       font-size: 16px;
     }
+
+    h1, h2, h3, h4, h5, h6, a, p, span, li {
+      color: #41454b;
+    }
+
 `
 
 export { GlobalStyle }
