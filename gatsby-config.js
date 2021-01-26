@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: `Netlify CSM with Gatsby`,
+    title: `Netlify CSM com Gatsby`,
     description: `This is a sample project to show how create a site with Gatsby and Netlify CMS`,
     author: `@elizeumatheus`,
   },
