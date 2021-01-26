@@ -1,0 +1,16 @@
+.tags {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags > li {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #eeeeee;
+}
+
+.tags > li:not(:last-child) {
+  margin-right: 0.5rem;
+}

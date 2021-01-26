@@ -16,3 +16,4 @@ collections:
       - { label: 'Tempo de leitura (em minutos)', name: 'read_time', widget: 'string' }
       - { label: 'Resumo', name: 'resume', widget: 'string' }
       - { label: 'Conteúdo', name: 'content', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'tags', required: false, separator: ','}
