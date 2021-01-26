@@ -4,6 +4,7 @@ export type NewsListType = {
   resume: string;
   title: string;
   readTime: string;
+  tags: string[];
 };
 
 export interface NewListProps {
@@ -21,6 +22,7 @@ export interface NewsListQuery {
             resume: string;
             title: string;
             read_time: string;
+            tags: string[];
           };
         };
       }

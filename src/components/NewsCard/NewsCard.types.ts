@@ -6,4 +6,5 @@ export interface NewsCardProps {
   title: string;
   description: string;
   readTime: string;
+  tags: string[];
 }

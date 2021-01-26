@@ -28,5 +28,6 @@ content: >-
 
   Vestibulum sagittis neque nec dignissim fermentum. Vivamus blandit metus vel facilisis tincidunt. Suspendisse ultrices laoreet tincidunt. Etiam leo justo, tristique vel varius vel, ultrices id quam. Duis sed tellus volutpat, viverra risus vitae, fermentum erat. Etiam quis lorem eu magna fringilla lobortis. Nam ac neque gravida, dignissim diam at, semper ipsum. Cras scelerisque commodo tempus. Integer non lacus eget urna pharetra mollis. Nunc congue turpis eget feugiat aliquam. Aliquam id augue finibus, mollis lorem eu, sodales quam. Cras nisl turpis, tempus vel quam ut, fermentum volutpat lectus. In vitae ornare magna. Suspendisse dapibus massa eu leo laoreet imperdiet ut eget neque. Nam sed ipsum imperdiet, interdum erat sed, ultrices ante. Ut id dui eu libero mattis sodales ac vitae massa.
 tags:
-  - ""
+  - Lorem
+  - Ipsum
 ---

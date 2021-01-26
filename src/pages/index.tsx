@@ -14,6 +14,7 @@ export default () => (
             image={{ alt: item.title, source: item.image }}
             key={item.id}
             readTime={item.readTime}
+            tags={item.tags}
             title={item.title}
           />
         ))

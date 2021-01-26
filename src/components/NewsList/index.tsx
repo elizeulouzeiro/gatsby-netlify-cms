@@ -18,6 +18,7 @@ const NewsList = ({ children }: NewListProps) => {
               image
               resume
               read_time
+              tags
             }
           }
         }
