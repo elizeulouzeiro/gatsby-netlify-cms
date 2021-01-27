@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-netlify-cms",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "This is a project to show how to create a simple and powerful integration of Netlify CMS with Gatsby web app.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Elizeu Louzeiro <elizeumatheus16@gmail.com>",
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -32,7 +32,9 @@
     "typescript": "^4.1.3"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "netlify-cms",
+    "typescript"
   ],
   "license": "0BSD",
   "scripts": {
@@ -47,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/elizeumatheus/gatsby-netlify-cms"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/elizeumatheus/gatsby-netlify-cms/issues"
   }
 }
