@@ -8,9 +8,11 @@
 
 > This is a project to show how to create a simple and powerful integration of Netlify CMS with Gatsby web app.
 
-### ✨ [Demo](https://festive-fermi-219908.netlify.app/)
+### ✨ [Live Demo](https://festive-fermi-219908.netlify.app/)
 
 ## Install
+
+Just run the followed command to install the project dependencies:
 
 ```sh
 yarn install
@@ -18,8 +20,16 @@ yarn install
 
 ## Usage
 
+<p>To run the application run the followed command:</p>
+
 ```sh
 yarn start
+```
+
+<p>And to run the Netlify CMS admin locally, run this:</p>
+
+```sh
+yarn cms
 ```
 
 ## Run tests (coming soon)
